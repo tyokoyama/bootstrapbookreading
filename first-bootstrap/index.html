@@ -2,11 +2,43 @@
 <html lang="ja">
 <head>
 	<meta charset="utf-8" />
+	<!-- スマートフォン向けにviewportを設定し、画面の幅を端末のサイズに合わせる。 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 	<title>はじめてのBootstrap</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+	<style type="text/css">
+	body {
+		padding-top: 50px;
+	}
+	</style> <!-- ナビゲーションバーとコンテンツを話すためのマージン（無いとかぶる） -->
 </head>
 <body>
-	<h1>Hello, world!</h1>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button><!-- 画面が小さい時に表示されるメニューボタン -->
+				<a href="#" class="navbar-brand">Project name</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">　<!-- ここがナビゲーションの項目 -->
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div>
+			<h1>はじめてのBootstrap</h1>
+			<p>ナビゲーションのあるページのベースです。</p>
+		</div>
+	</div>
 	<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
