@@ -9,12 +9,20 @@
 	body {
 		padding-top: 50px;
 	}
-/* div要素の配置を確認するためにborder-styleの設定をいれる。
+/* div要素の配置を確認するためにborder-styleの設定をいれる。 */
 	div {
 		border-style: solid;
 		border-width: 1px 1px 1px 1px;
 	}
-*/
+	.col-md-1 {
+		background-color: #f2dede
+	}
+	.col-md-2 {
+		background-color: #dff0d8
+	}
+	.col-md-4 {
+		background-color: #d9edf7
+	}
 	</style>
 </head>
 <body>
@@ -44,6 +52,34 @@
 				<h3>フッター</h3>
 				<p>フッター</p>
 			</div>
+		</div>
+		<div class="row">
+			<div class="col col-md-3">3</div>
+			<div class="col col-md-3 col-md-offset-3">3 + offset 3</div>
+		</div>
+		<div class="row">
+			<div class="col col-md-3">3</div>
+			<div class="col col-md-3 col-md-offset-6">3 + offset 6</div>
+		</div>
+		<div class="row">
+			<div class="col col-md-6 col-md-offset-3">6 + offset 3</div>
+		</div>
+		<div class="row">
+			<div class="col col-md-3 col-md-offset-3">3 + offset 3</div>
+			<div class="col col-md-3 col-md-offset-3">3 + offset 3</div>
+		</div>
+		<div class="row">
+			<div class="col col-md-6 col-md-offset-6">6 + offset 6</div>
+		</div>
+		<div class="row">
+			<div class="col col-md-4">左</div>
+			<div class="col col-md-4">真ん中
+				<div class="row">
+					<div class="col col-md-3">3</div>
+					<div class="col col-md-9">9</div>
+				</div>
+			</div>
+			<div class="col col-md-4">右</div>
 		</div>
 	</div>
 </body>
