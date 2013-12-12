@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+	<title>インラインフォーム</title>
+	<style type="text/css">
+		.my-inline.form-inline input[type="text"],
+		.my-inline.form-inline input[type="password"] {
+			width: 180px;
+		}
+	</style>
+</head>
+<body>
+	<form class="my-inline form-inline">
+		<div class="form-group">
+			<label class="sr-only">メールアドレス</label>
+			<input class="form-control" type="text" name="email" placeholder="メールアドレス" />
+		</div>
+		<div class="form-group">
+			<label class="sr-only">パスワード</label>
+			<input class="form-control" type="password" name="password" placeholder="パスワード" />
+		</div>
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" name="rememberme">ログインしたままにする
+			</label>
+		</div>
+		<button type="submit" class="btn btn-primary">ログイン</button>
+	</form>
+	<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
