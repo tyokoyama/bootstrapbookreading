@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<title>ナビゲーションバー</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+	<style type="text/css">
+		.my-navbar.navbar-form input[type="text"],
+		.my-navbar.navbar-form input[type="password"] {
+			width: 180px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar navbar-default">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">Bootstrap</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">基本的なCSS</a></li>
+				<li><a href="#">コンポーネント</a></li>
+				<li><a href="#">JavaScript</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">メニュー４<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">ドロップダウン1</a></li>
+						<li><a href="#">ドロップダウン2</a></li>
+						<li class="divider"></li>
+						<li><a href="#">ドロップダウン3</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div class="nav navbar-default">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">ページタイトル</a>
+			</div>
+			<form class="navbar-form my-navbar">
+				<input class="form-control" type="text" name="username" placeholder="メールアドレス" />
+				<input class="form-control" type="password" name="password" placeholder="パスワード" />
+				<button type="submit" class="btn btn-primary">ログイン</button>
+			</form>
+		</div>
+
+		<div class="nav navbar-default">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">ページタイトル</a>
+			</div>
+			<form class="navbar-form my-navbar pull-right">
+				<input class="form-control" type="text" name="username" placeholder="メールアドレス" />
+				<input class="form-control" type="password" name="password" placeholder="パスワード" />
+				<button type="submit" class="btn btn-primary">ログイン</button>
+			</form>
+		</div>
+
+		<div class="nav navbar-default">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">ページタイトル</a>
+			</div>
+			<button class="btn btn-primary navbar-btn">ボタン</button>
+		</div>
+
+		<div class="nav navbar-default">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">ページタイトル</a>
+			</div>
+			<p class="navbar-text">こんにちは<a href="#" class="navbar-link">ユーザ</a>さん！</p>	
+		</div>
+
+	</div>
+	<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
