@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<title>モーダルサンプル</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+</head>
+<body>
+	<div class="modal" id="mymodal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">ヘッダー</h4>
+				</div>
+				<div class="modal-body">
+					<p>コンテンツ</p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" data-dismiss="modal">閉じる</button>
+					<button class="btn btn-primary">更新</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#mymodal" data-toggle="modal" class="btn btn-primary">モーダル起動</a>
+	<div class="container">
+	</div>
+	<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
